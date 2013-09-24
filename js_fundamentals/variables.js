@@ -47,8 +47,8 @@
 // Calculate how many you would eat total for the rest of your life.
 // Output the result to the screen like so: "You will need NN to last you until the ripe old age of X".
 
-// currentAge = 35;
-// maximumAge = 100;
+// currentAge = 35;maximumAge = 100;
+// 
 // desiredDailyQuantity = 2;
 // lifetimeQuantity = desiredDailyQuantity * (maximumAge - currentAge) * 365;
 // alert(lifetimeQuantity);
