@@ -1,0 +1,83 @@
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    .unread {
+      color: red;
+    }
+    .read {
+      color: green;
+    }
+   
+
+  </style>
+</head>
+<body>
+<h1>My Book List</h1>
+
+
+
+<script type="text/javascript">
+
+
+
+testBookArray = [
+
+  {title: "Lord of the Rings",
+   author: "J.R.R. Tolkien",
+   read: true},
+   
+  {title: "50 Shades of Grey",
+    author: "Somebody",
+    read: false},
+  
+  {title: "Climb the Highest Mountian",
+    author: "Mark & Elizabeth Clare Prophet",
+    read: true},
+
+  {title: "The Sneetches and Other Stories",
+    author: "Dr. Suess",
+    read: true},
+];
+
+  var pageBody = document.getElementsByTagName("body")[0];
+ 
+
+  function bookStatus(bookArray){
+
+    var listTitle = document.createElement("h2");
+    listTitle.innerHTML = "Books I Know About";
+    pageBody.appendChild(listTitle);
+    var ulTag = document.createElement("ul");
+    pageBody.appendChild(ulTag);
+    
+    for (var i = bookArray.length - 1; i >= 0; i--){
+
+      // create list element
+      var bookLi = document.createElement("li");
+      bookLi.innerHTML = bookArray[i].title + " by " +  bookArray[i].author + "." ;
+      
+      // indicate read/unread status
+      if (bookArray[i].read === true){
+        bookLi.className = "read";
+      }else{
+         bookLi.className = "unread";
+      };
+
+      // add book cover photo
+      bookArray[i].coverUrl = "http://www.dogbreedinfo.com/images17/FrenchBulldogHarley8months.JPG";
+      var bookImage = document.createElement("img");
+      bookImage.src = bookArray[i].coverUrl;
+
+     
+      bookLi.appendChild(document.createElement("br"));
+      bookLi.appendChild(bookImage);
+      ulTag.appendChild(bookLi);
+    };
+  };
+
+bookStatus(testBookArray)
+
+</script>
+</body>
+</html>

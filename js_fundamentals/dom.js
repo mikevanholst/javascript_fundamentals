@@ -10,9 +10,11 @@
 // Find the Google search button and store it in a variable.
 // Modify the text of the button so that it says "Yahooo!" instead.
 
+// yahooLogo = http://l.yimg.com/rz/d/yahoo_frontpage_en-CA_s_f_p_101x50_frontpage.png
+// googleButton = <button class="gbqfba" aria-label="Google Search" id="gbqfba" name="btnK"><span id="gbqfsa">Google Search</span></button>
+// see 
 
 
-document.getElementById("")
 
 
 
@@ -22,29 +24,55 @@ document.getElementById("")
 // Cuz every webpage needs an "About" section.
 
 // Start with this HTML and save it as "aboutme.html":
-// <!DOCTYPE html>
-// <html>
-//  <head>
-//   <meta charset="utf-8"/>
-//   <title>About Me</title>
-// </head>
-// <body>
-//   <h1>About Me</h1>
-  
-//   <ul>
-//     <li>Nickname: <span id="nickname"></span>
-//     <li>Favorites:  <span id="favorites"></span>
-//     <li>Hometown: <span id="hometown"></span>
-//    </ul>
-  
-//  </body>
-// </html>
+
   
 // Add a script tag to the bottom.
 // Change the body style so it has a font-family of "Arial, sans-serif".
 // Replace each of the spans (nickname, favorites, hometown) with your own information.
 // Iterate through each li and change the class to "listitem". Add a style tag that sets a rule for "listitem" to make the color red.
 // Create a new img element and set its src attribute to a picture of you. Append that element to the page.
+
+// <!DOCTYPE html>
+// <html>
+//  <head>
+//   <meta charset="utf-8"/>
+//   <title>About Me</title>
+//   <style type="text/css">
+//     .listitem {
+//       color: red;
+//     }
+
+//   </style>
+// </head>
+// <body>
+//   <h1>About Me</h1>
+  
+//   <ul>
+//     <li >Nickname: <span id="nickname">x</span>
+//     <li>Favorites:  <span id="favorites">y</span>
+//     <li>Hometown: <span id="hometown">z</span>
+//    </ul>
+  
+//  </body>
+// <script type="text/javascript">
+//   document.getElementsByTagName("body")[0].style.fontFamily = "Arial, sans-serif";
+//   document.getElementById("nickname").innerHTML = "Spiderman";
+//   document.getElementById("favorites").innerHTML = "Sushi" ;
+//   document.getElementById("hometown").innerHTML = "London";
+
+//   listArray = document.getElementsByTagName("li");
+//   for (var i = listArray.length - 1; i >= 0; i--) {
+//     listArray[i].className = "listitem"
+//   };
+
+//   var mikeImage = document.createElement("img");
+//   mikeImage.src = "mike_avatar.jpg";
+//   document.getElementsByTagName("body")[0].appendChild(mikeImage);
+
+// </script>
+
+// </html>
+
 
 // EXERCISE: The Book List
 
