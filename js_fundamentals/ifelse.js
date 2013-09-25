@@ -52,24 +52,25 @@
 
 // function assignGrade(numberScore){
 //   if (numberScore < 50){
-//     return "F";
+//     result = "F";
 //   }else if (numberScore < 60){
-//     return "D";
+//     result = "D";
 //   }else if (numberScore < 70){
-//     return "D";
+//     result = "D";
 //   }else if (numberScore < 80){
-//     return "B";
+//     result = "B";
 //   }else if (numberScore === "Kobayashi Maru"){
-//     return "A+";
+//     result = "Cadet Kirk, you have scored an A+";
 //   }else{
-//     return "A";
+//     result = "A";
 //   }
+//   return console.log(result);
 // }
 
-// console.log(assignGrade(75));
-// console.log(assignGrade(45));
-// console.log(assignGrade(95));
-// console.log(assignGrade("Kobayashi Maru"));
+// assignGrade(75);
+// assignGrade(45);
+// assignGrade(95);
+// assignGrade("Kobayashi Maru");
 
 
 // EXERCISE: The Pluralizer
@@ -82,15 +83,16 @@
 
 // function pluralize(number, noun){
 //   if (number === 1){
-//     return ("1 " + noun);
+//     result = ("1 " + noun);
 //   }else{
-//     return (number + " " + noun + "s");
+//     result = (number + " " + noun + "s");
 //   }
+//   console.log(result);
 // }
 
-// console.log(pluralize(76, "trombone"));
-// console.log(pluralize(1, "Partridge"));
-// console.log(pluralize(95,"Parie dogs"));
+// pluralize(76, "trombone");
+// pluralize(1, "Partridge");
+// pluralize(95,"Parie dogs");
 
 
 
