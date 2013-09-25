@@ -10,8 +10,12 @@ function listFavourites(myarray){
   arrayLength = myarray.length;
   for (i = 0; i < arrayLength; i++){
     elementNum = (i + 1);
-    if (elementNum >10 && elementNum < 14){
-      suffixIndex = 0;
+    if (elementNum % 100 === 11){
+      suffixIndex = 11;
+    }else if (elementNum % 100 === 12){
+      suffixIndex = 12;
+    }else if (elementNum % 100 === 13){
+      suffixIndex = 13;
     }else if (elementNum < 10) {
        suffixIndex = elementNum;
     }else{
@@ -31,5 +35,6 @@ function listFavourites(myarray){
   } 
 }
 
-listFavourites(["Morya", "Lanto", "Paul the Venetian", "Serapis Bey", "Hilarion", "Nada", "Saint Germain", "Michael", "Jophiel", "Chamuel", "Gabriel", "Raphael", "Uriel", "Zadkiel","Hercules", "Apollo", "Eros", "Purity", "Cyclopea", "Peace", "Arcturus"]);
+listFavourites(["Morya", "Lanto", "Paul the Venetian", "Serapis Bey", "Hilarion", "Nada", "Saint Germain", "Michael", "Jophiel", "Chamuel", "Gabriel", "Raphael", "Uriel", "Zadkiel","Hercules", "Apollo", "Eros", "Purity", "Cyclopea", "Peace", "Arcturus","Kuan Yin", "Pallas Athena", "Liberty"]);
+
 
